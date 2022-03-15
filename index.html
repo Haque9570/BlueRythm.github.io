@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
     <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css\style.css">
 
 </head>
 
@@ -19,9 +19,10 @@
     <!-- header section starts  -->
 
     <header>
-
-        <a href="#" class="logo"><img src="image\logo.svg" alt="Blue Rythm logo" width="10%"></a>
-
+        <div class="logoDiv">
+            <a href="#" class="logo"><img src="image\logo.svg" alt="Blue Rythm logo"></a>
+            <h2>Blue Rythm</h2>
+        </div>
         <div id="menu-bar" class="fas fa-bars"></div>
 
         <nav class="navbar">
@@ -40,8 +41,15 @@
     <!-- home section starts  -->
 
     <section class="home" id="home">
-        <div class="content" align="center">
-            <img src="image\vc3.svg" alt="" width="85%">
+
+        <div class="design">
+            <img src="image\logo2.svg" alt="" width="120%">
+        </div>
+        <div class="content">
+            <img src="image\vc3.svg" alt="" width="100%">
+        </div>
+        <div class="design">
+            <img src="image\logo3.svg" alt="" width="120%">
         </div>
     </section>
 
@@ -227,7 +235,7 @@
             <img src="images/header-img.png" alt="">
         </div>
 
-        <form>
+        <form onsubmit="sendEmail()">
             <div class="inputBox">
                 <input type="text" placeholder="your name">
                 <input type="email" placeholder="your email">
@@ -237,7 +245,7 @@
                 <input type="text" placeholder="your address">
             </div>
             <textarea placeholder="say something" name="" id="" cols="30" rows="10"></textarea>
-            <input type="submit" value="send message" class="btn" onsubmit="sendEmail()">
+            <input type="submit" value="send message" class="btn">
         </form>
 
     </section>
