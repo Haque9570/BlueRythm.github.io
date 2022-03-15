@@ -33,7 +33,10 @@ body {
 }
 
 section {
-    padding: 3rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .btn {
@@ -58,7 +61,7 @@ section {
     display: flex;
     margin: 0;
     width: 100px;
-    height: 45px;
+    height: 40px;
     transition: transform 0.1s;
 }
 
@@ -94,7 +97,7 @@ header {
     right: 0;
     z-index: 10000;
     background: var(--pink);
-    padding: 15px;
+    padding: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,9 +116,9 @@ header .navbar a:hover {
 
 #menu-bar {
     font-size: 3rem;
-    color: #030099;
+    color: #ffffff;
     border-radius: .5rem;
-    border: .1rem solid #030099;
+    border: .1rem solid #ffffff;
     padding: .5rem 1.5rem;
     cursor: pointer;
     display: none;
@@ -161,7 +164,6 @@ header .navbar a:hover {
     background-image: linear-gradient(to top, #030099 0%, #ffffff 100%);
     flex-basis: 100%;
     padding: 0px;
-    height: 610px;
 }
 
 .home .content span {
