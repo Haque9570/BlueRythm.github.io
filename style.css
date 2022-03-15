@@ -157,7 +157,6 @@ header .navbar a:hover {
     display: flex;
     align-items: center;
     flex: wrap;
-    justify-content: space-around;
     flex-direction: row;
     background-image: linear-gradient(to top, #030099 0%, #ffffff 100%);
     flex-basis: 100%;
@@ -473,20 +472,6 @@ header .navbar a:hover {
         padding: 1rem 2rem;
         font-size: 2.5rem;
     }
-    .home {
-        justify-content: center;
-        background-position: left;
-        width: auto;
-        height: auto;
-    }
-    .home .content {
-        width: 120%;
-        height: auto;
-    }
-    .home .content .design {
-        width: 150%;
-        height: auto;
-    }
     .clients .row {
         flex-flow: column;
     }
@@ -497,10 +482,6 @@ header .navbar a:hover {
         display: flex;
         flex-flow: column-reverse;
     }
-    .map .map2 {
-        width: 100%;
-        height: auto;
-    }
     .contact form .inputBox input {
         width: 100%;
     }
@@ -509,22 +490,5 @@ header .navbar a:hover {
 @media (max-width:450px) {
     html {
         font-size: 50%;
-    }
-}
-
-@media (max-width:520px) {
-    .home {
-        justify-content: center;
-        background-position: left;
-        width: auto;
-        height: auto;
-    }
-    .home .content {
-        width: 120%;
-        height: auto;
-    }
-    .home .content .design {
-        width: 150%;
-        height: auto;
     }
 }
