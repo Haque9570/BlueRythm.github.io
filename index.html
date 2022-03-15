@@ -12,6 +12,7 @@
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
 
+
 </head>
 
 <body>
@@ -235,7 +236,7 @@
             <img src="images/header-img.png" alt="">
         </div>
 
-        <form onsubmit="sendEmail()">
+        <form id="Contact form" method="post" action="contact_form.php">
             <div class="inputBox">
                 <input type="text" placeholder="your name">
                 <input type="email" placeholder="your email">
@@ -297,22 +298,6 @@
         window.onscroll = () => {
             menu.classList.remove('fa-times');
             navbar.classList.remove('nav-toggle');
-        }
-    </script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "mdmerajulhaqueghz@gmail.com",
-                Password: "8658E6B043A0EEB2D71757192B74B9A22E1E",
-                To: 'mdmerajulhaqueghz@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "New contact from Blue Rythm",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
         }
     </script>
 

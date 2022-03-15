@@ -135,6 +135,7 @@ header .navbar a:hover {
 
 .content>img {
     display: flex;
+    flex-direction: column;
     margin-top: 100px;
     transition: transform 0.1s;
 }
@@ -153,6 +154,7 @@ header .navbar a:hover {
 
 .design>img {
     display: flex;
+    flex-direction: column;
     margin-top: 100px;
     align-items: center;
 }
