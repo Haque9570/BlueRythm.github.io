@@ -671,3 +671,12 @@
          }
      }
  }
+ 
+ @media only screen and (max-width: 479px) {
+     .footer-text ul li {
+         flex-flow: column;
+     }
+     .contact.conRow {
+         flex-flow: column;
+     }
+ }
